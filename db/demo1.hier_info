@@ -1,0 +1,82 @@
+|EU1bitTest
+A0out <= A0.DB_MAX_OUTPUT_PORT_TYPE
+clear => A0.ACLR
+clear => C0.ACLR
+clear => B0.ACLR
+clock => A0.CLK
+clock => C0.CLK
+clock => B0.CLK
+R1 => 74139M:inst4.B
+R1 => MUX41:inst.S1
+R0 => 74139M:inst4.A
+R0 => MUX41:inst.S0
+VCC => 74139M:inst4.G
+value => ALU1bit:ALU0.A
+C0out <= C0.DB_MAX_OUTPUT_PORT_TYPE
+preset => C0.PRESET
+preset => B0.PRESET
+preset => A0.PRESET
+B0out <= B0.DB_MAX_OUTPUT_PORT_TYPE
+cin => ALU1bit:ALU0.Cin
+s1 => ALU1bit:ALU0.s1
+s0 => ALU1bit:ALU0.s0
+FOUT <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EU1bitTest|74139M:inst4
+Y3N <= 36.DB_MAX_OUTPUT_PORT_TYPE
+B => 11.IN0
+A => 8.IN0
+G => 7.IN0
+Y0N <= 33.DB_MAX_OUTPUT_PORT_TYPE
+Y1N <= 34.DB_MAX_OUTPUT_PORT_TYPE
+Y2N <= 35.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EU1bitTest|ALU1bit:ALU0
+F <= MUX41:inst.Q
+s0 => MUX41:inst.S0
+A => FullAdder1bit:inst10.A
+A => inst9.IN0
+A => MUX41:inst.D0
+B => FullAdder1bit:inst10.B
+B => inst9.IN1
+B => MUX41:inst.D1
+Cin => FullAdder1bit:inst10.Cin
+s1 => MUX41:inst.S1
+Cout <= FullAdder1bit:inst10.Cout
+
+
+|EU1bitTest|ALU1bit:ALU0|MUX41:inst
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|EU1bitTest|ALU1bit:ALU0|FullAdder1bit:inst10
+Out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EU1bitTest|MUX41:inst
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+

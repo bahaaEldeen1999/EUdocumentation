@@ -1,0 +1,200 @@
+$comment
+	File created using the following command:
+		vcd file demo1.msim.vcd -direction
+$end
+$date
+	Sun Oct 06 01:26:50 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module EU1bitTest_vlg_vec_tst $end
+$var reg 1 ! cin $end
+$var reg 1 " clear $end
+$var reg 1 # clock $end
+$var reg 1 $ preset $end
+$var reg 1 % R0 $end
+$var reg 1 & R1 $end
+$var reg 1 ' s0 $end
+$var reg 1 ( s1 $end
+$var reg 1 ) value $end
+$var reg 1 * VCC $end
+$var wire 1 + A0out $end
+$var wire 1 , B0out $end
+$var wire 1 - C0out $end
+$var wire 1 . FOUT $end
+
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var tri1 1 2 devclrn $end
+$var tri1 1 3 devpor $end
+$var tri1 1 4 devoe $end
+$var wire 1 5 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 6 clear~input_o $end
+$var wire 1 7 preset~input_o $end
+$var wire 1 8 A0~1_combout $end
+$var wire 1 9 clock~input_o $end
+$var wire 1 : clock~inputCLKENA0_outclk $end
+$var wire 1 ; s0~input_o $end
+$var wire 1 < value~input_o $end
+$var wire 1 = ALU0|inst|6~3_combout $end
+$var wire 1 > R0~input_o $end
+$var wire 1 ? R1~input_o $end
+$var wire 1 @ VCC~input_o $end
+$var wire 1 A inst4|33~combout $end
+$var wire 1 B cin~input_o $end
+$var wire 1 C s1~input_o $end
+$var wire 1 D inst4|34~combout $end
+$var wire 1 E B0~1_combout $end
+$var wire 1 F A0~0_combout $end
+$var wire 1 G B0~_emulated_q $end
+$var wire 1 H B0~0_combout $end
+$var wire 1 I inst4|35~combout $end
+$var wire 1 J C0~1_combout $end
+$var wire 1 K C0~_emulated_q $end
+$var wire 1 L C0~0_combout $end
+$var wire 1 M ALU0|inst|6~0_combout $end
+$var wire 1 N ALU0|inst|6~2_combout $end
+$var wire 1 O A0~3_combout $end
+$var wire 1 P A0~_emulated_q $end
+$var wire 1 Q A0~2_combout $end
+$var wire 1 R ALU0|inst|6~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+1)
+1*
+0+
+0,
+0-
+1.
+0/
+10
+x1
+12
+13
+14
+05
+06
+07
+08
+09
+0:
+0;
+1<
+1=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+1E
+1F
+0G
+0H
+0I
+1J
+0K
+0L
+0M
+0N
+1O
+0P
+0Q
+1R
+$end
+#50000
+1#
+19
+1:
+#100000
+0#
+09
+0:
+#150000
+1#
+19
+1:
+#200000
+0#
+09
+0:
+#250000
+1#
+19
+1:
+#300000
+0#
+09
+0:
+#350000
+1#
+19
+1:
+#400000
+0#
+09
+0:
+#450000
+1#
+19
+1:
+#500000
+0#
+09
+0:
+#550000
+1#
+19
+1:
+#600000
+0#
+09
+0:
+#650000
+1#
+19
+1:
+#700000
+0#
+09
+0:
+#750000
+1#
+19
+1:
+#800000
+0#
+09
+0:
+#850000
+1#
+19
+1:
+#900000
+0#
+09
+0:
+#950000
+1#
+19
+1:
+#1000000
